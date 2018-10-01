@@ -1,0 +1,1729 @@
+2018-06-22 20:56:43  [ main:0 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(always=false, about=, sampleName=Ops, type=DEFAULT, valueName=Time, value=[Rate of successful kerberos logins and latency (milliseconds)])
+2018-06-22 20:56:43  [ main:31 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(always=false, about=, sampleName=Ops, type=DEFAULT, valueName=Time, value=[Rate of failed kerberos logins and latency (milliseconds)])
+2018-06-22 20:56:43  [ main:31 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(always=false, about=, sampleName=Ops, type=DEFAULT, valueName=Time, value=[GetGroups])
+2018-06-22 20:56:43  [ main:31 ] - [ DEBUG ]  UgiMetrics, User and group related metrics
+2018-06-22 20:56:43  [ main:110 ] - [ DEBUG ]  Kerberos krb5 configuration not found, setting default realm to empty
+2018-06-22 20:56:43  [ main:147 ] - [ DEBUG ]   Creating new Groups object
+2018-06-22 20:56:43  [ main:163 ] - [ DEBUG ]  Trying to load the custom-built native-hadoop library...
+2018-06-22 20:56:43  [ main:194 ] - [ DEBUG ]  Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: H:\Software\hadoop\bin\hadoop.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+2018-06-22 20:56:43  [ main:194 ] - [ DEBUG ]  java.library.path=C:\develop\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/develop/jre/bin/client;C:/develop/jre/bin;C:/develop/jre/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\develop\node\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;H:\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\develop\java\bin;H:\Software\hadoop\bin;H:\Software\hadoop\sbin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;;H:\开发工具\eclipse;;.
+2018-06-22 20:56:43  [ main:194 ] - [ WARN ]  Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-06-22 20:56:43  [ main:194 ] - [ DEBUG ]  Falling back to shell based
+2018-06-22 20:56:43  [ main:194 ] - [ DEBUG ]  Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping
+2018-06-22 20:56:43  [ main:225 ] - [ DEBUG ]  Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
+2018-06-22 20:56:43  [ main:241 ] - [ DEBUG ]  hadoop login
+2018-06-22 20:56:43  [ main:241 ] - [ DEBUG ]  hadoop login commit
+2018-06-22 20:56:43  [ main:241 ] - [ DEBUG ]  using local user:NTUserPrincipal: Administrator
+2018-06-22 20:56:43  [ main:241 ] - [ DEBUG ]  Using user: "NTUserPrincipal: Administrator" with name Administrator
+2018-06-22 20:56:43  [ main:241 ] - [ DEBUG ]  User entry: "Administrator"
+2018-06-22 20:56:43  [ main:241 ] - [ DEBUG ]  UGI loginUser:Administrator (auth:SIMPLE)
+2018-06-22 20:56:43  [ main:413 ] - [ DEBUG ]  PrivilegedAction as:Administrator (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.connect(Job.java:1255)
+2018-06-22 20:56:43  [ main:428 ] - [ DEBUG ]  Trying ClientProtocolProvider : org.apache.hadoop.mapred.LocalClientProtocolProvider
+2018-06-22 20:56:43  [ main:428 ] - [ INFO ]  session.id is deprecated. Instead, use dfs.metrics.session-id
+2018-06-22 20:56:43  [ main:428 ] - [ INFO ]  Initializing JVM Metrics with processName=JobTracker, sessionId=
+2018-06-22 20:56:43  [ main:460 ] - [ DEBUG ]  Picked org.apache.hadoop.mapred.LocalClientProtocolProvider as the ClientProtocolProvider
+2018-06-22 20:56:43  [ main:460 ] - [ DEBUG ]  PrivilegedAction as:Administrator (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Cluster.getFileSystem(Cluster.java:162)
+2018-06-22 20:56:43  [ main:460 ] - [ DEBUG ]  PrivilegedAction as:Administrator (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.submit(Job.java:1287)
+2018-06-22 20:56:44  [ main:1038 ] - [ DEBUG ]  Configuring job job_local950759712_0001 with file:/tmp/hadoop-Administrator/mapred/staging/Administrator950759712/.staging/job_local950759712_0001 as the submit dir
+2018-06-22 20:56:44  [ main:1038 ] - [ DEBUG ]  adding the following namenodes' delegation tokens:[file:///]
+2018-06-22 20:56:45  [ main:1835 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2018-06-22 20:56:45  [ main:1835 ] - [ DEBUG ]  default FileSystem: file:///
+2018-06-22 20:56:45  [ main:1979 ] - [ WARN ]  No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2018-06-22 20:56:45  [ main:1979 ] - [ DEBUG ]  Creating splits at file:/tmp/hadoop-Administrator/mapred/staging/Administrator950759712/.staging/job_local950759712_0001
+2018-06-22 20:56:45  [ main:2417 ] - [ DEBUG ]  Time taken to get FileStatuses: 427
+2018-06-22 20:56:45  [ main:2417 ] - [ INFO ]  Total input paths to process : 3
+2018-06-22 20:56:45  [ main:2417 ] - [ DEBUG ]  Total # of splits generated by getSplits: 3, TimeTaken: 436
+2018-06-22 20:56:46  [ main:3213 ] - [ INFO ]  number of splits:3
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for all properties in config...
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.address
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.scheduler.monitor.policies
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.resource.check.interval
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.client.thread-count
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.am.containerlauncher.threadpool-initial-size
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for mapred.child.java.opts
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.retiredjobs.cache.size
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for dfs.client.https.need-auth
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for yarn.admin.acl
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.am.job.committer.cancel-timeout
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.emit-timeline-data
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for fs.ftp.host.port
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.avoid.read.stale.datanode
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for dfs.journalnode.rpc-address
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.end-notification.retry.attempts
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.leveldb-timeline-store.ttl-interval-ms
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.leveldb-state-store.path
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for mapred.mapper.new-api
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for yarn.ipc.rpc.class
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for ipc.client.connection.maxidletime
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.process-kill-wait.ms
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for mapreduce.cluster.acls.enabled
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.handler.count
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for io.map.index.interval
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.https-address
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.profile.reduces
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for fs.s3n.multipart.uploads.enabled
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for io.seqfile.sorter.recordlimit
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.ubertask.maxmaps
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.tasks.sleeptimebeforesigkill
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for hadoop.util.hash.type
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.replication.min
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.container-manager.thread-count
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.jobhistory.block.size
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.fs-limits.min-block-size
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for mapreduce.app-submission.cross-platform
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for fs.AbstractFileSystem.file.impl
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for net.topology.script.number.args
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.container-tokens.master-key-rolling-interval-secs
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for mapreduce.map.output.compress.codec
+2018-06-22 20:56:47  [ main:3616 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.reducer.preempt.delay.sec
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for s3native.bytes-per-checksum
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.path.based.cache.block.map.allocation.percent
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.windows-container.memory-limit.enabled
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.input.fileinputformat.split.minsize
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for hadoop.security.group.mapping
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.system.dir
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.end-notification.max.attempts
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.markreset.buffer.percent
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.cache.revocation.polling.ms
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.speculative
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.localizer.cache.cleanup.interval-ms
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.lazypersist.file.scrub.interval.sec
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for fs.s3a.threads.core
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.recovery.store.fs.uri
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.leveldb-timeline-store.start-time-read-cache-size
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for hadoop.registry.zk.retry.interval.ms
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.keytab
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.replication.interval
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.admin.address
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.maps
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for nfs.dump.dir
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.user.name
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.maxtasks.perjob
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.ubertask.enable
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.reduce.class
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.delete.debug-delay-sec
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.ttl-enable
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.fs.state-store.retry-policy-spec
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.skip.maxgroups
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.client.use.datanode.hostname
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for fs.trash.interval
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.am.max-attempts
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.heartbeats.in.second
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.zk-num-retries
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for s3.blocksize
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.data.dir
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.persist.jobstatus.active
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.shuffle.parallelcopies
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for fs.s3.buffer.dir
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.done-dir
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for hadoop.security.instrumentation.requires.admin
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for hadoop.registry.zk.retry.ceiling.ms
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for nfs.rtmax
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.data.dir.perm
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.container.liveness-monitor.interval-ms
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.env-whitelist
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.backup.address
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.xattrs.enabled
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.readahead.bytes
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.bp-ready.timeout
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.client.job.max-retries
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.cleaner.enable
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.client.block.write.retries
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.http.address
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.linux-container-executor.cgroups.hierarchy
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for ha.failover-controller.graceful-fence.connection.retries
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.recovery.enabled
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.am.container.log.backups
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.safemode.threshold-pct
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.disk-health-checker.interval-ms
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for hadoop.security.java.secure.random.algorithm
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.list.cache.directives.num.responses
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.dns.nameserver
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.cluster.temp.dir
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for fs.s3a.max.total.tasks
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.maxattempts
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.client.submit.file.replication
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.shuffle.port
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.fail-fast
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.resource-tracker.client.thread-count
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.replication.considerLoad
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.webapp.cross-origin.enabled
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.edits.journal-plugin.qjournal
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.client.write.exclude.nodes.cache.expiry.interval.millis
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.delete.thread-count
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.client.mmap.cache.timeout.ms
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.admin-env
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for io.skip.checksum.errors
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.hostname
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.proxy-user-privileges.enabled
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.speculative.speculative-cap-total-tasks
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.acl.enable
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for fs.s3a.fast.upload
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for file.blocksize
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.speculative.slowtaskthreshold
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for ftp.replication
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.cleaner.initial-delay-mins
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for s3native.client-write-packet-size
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for hadoop.rpc.socket.factory.class.default
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for file.bytes-per-checksum
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.slow.io.warning.threshold.ms
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for io.seqfile.lazydecompress
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.skip.start.attempts
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.reject-unresolved-dn-topology-mapping
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for hadoop.common.configuration.version
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.client.thread-count
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.drop.cache.behind.reads
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.admin.address
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.output.value.class
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.output.fileoutputformat.outputdir
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.taskcache.levels
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.linux-container-executor.nonsecure-mode.user-pattern
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.zk-timeout-ms
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.max-completed-applications
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.jvm.numtasks
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.cleaner.period-mins
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.tasktracker.maxblacklists
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.top.num.users
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.linux-container-executor.cgroups.mount
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.checksum.algo.impl
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.end-notification.max.retry.interval
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.acl-view-job
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.classloader
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.log-aggregation-enable
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.shuffle.fetch.retry.interval-ms
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.nodemanager.minimum.version
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for hadoop.security.kms.client.encrypted.key.cache.size
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.am.job.task.listener.thread-count
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.am.resource.cpu-vcores
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.edit.log.autoroll.check.interval.ms
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.output.fileoutputformat.compress.type
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for hadoop.hdfs.configuration.version
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for hadoop.security.group.mapping.ldap.search.attr.member
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.log.retain-seconds
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.local-cache.max-files-per-directory
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.end-notification.retry.interval
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for hadoop.ssl.client.conf
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.root-dir
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.journalnode.https-address
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.shuffle.fetch.retry.timeout-ms
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.bytes-per-checksum
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.max.objects
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.instrumentation
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.max.transfer.threads
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.block.access.key.update.interval
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.jobhistory.task.numberprogresssplits
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.map.output.key.class
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.map.memory.mb
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for ha.failover-controller.new-active.rpc-timeout.ms
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for hadoop.ssl.hostname.verifier
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.client.read.shortcircuit
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.hdfs-blocks-metadata.enabled
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.healthchecker.interval
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.image.transfer.chunksize
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.taskmemorymanager.monitoringinterval
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.client.https.keystore.resource
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.connect.retry-interval.ms
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.webapp.address
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for s3native.blocksize
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.scheduler.minimum-allocation-mb
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.cleaner.resource-sleep-ms
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for net.topology.impl
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.client.failover.sleep.base.millis
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.permissions.superusergroup
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for io.seqfile.compress.blocksize
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for hadoop.registry.zk.retry.times
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for fs.AbstractFileSystem.ftp.impl
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.checkpoint.edits.dir
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.running.reduce.limit
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.blockreport.initialDelay
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.heartbeat.recheck-interval
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.safemode.extension
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.scheduler.maximum-allocation-mb
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.reduce.shuffle.consumer.plugin.class
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.vmem-check-enabled
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.io.sort.factor
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.persist.jobstatus.dir
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.client.failover.sleep.max.millis
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.delegation.key.update-interval
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for hadoop.rpc.protection
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for fs.permissions.umask-mode
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for fs.s3.sleepTimeSeconds
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for ha.health-monitor.rpc-timeout.ms
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for hadoop.http.staticuser.user
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for fs.s3a.connection.maximum
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.linux-container-executor.nonsecure-mode.limit-users
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for fs.s3a.paging.maximum
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for fs.AbstractFileSystem.viewfs.impl
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for fs.ftp.host
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.linux-container-executor.nonsecure-mode.local-user
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for fs.s3a.impl
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for hadoop.http.authentication.kerberos.keytab
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.fs-limits.max-blocks-per-file
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.http.threads
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.dns.nameserver
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.am-rm-tokens.master-key-rolling-interval-secs
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.client.block.write.replace-datanode-on-failure.enable
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for io.compression.codec.bzip2.library
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.map.skip.maxrecords
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.client.use.legacy.blockreader.local
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.checkpoint.dir
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.top.windows.minutes
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.maxtaskfailures.per.tracker
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for net.topology.node.switch.mapping.impl
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.shuffle.max.connections
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.loadedjobs.cache.size
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.storage.policy.enabled
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.client.application-client-protocol.poll-interval-ms
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.localizer.address
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.list.cache.pools.num.responses
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for nfs.server.port
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.client.output.filter
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.client.best-effort
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for ha.zookeeper.parent-znode
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.persist.jobstatus.hours
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.admin.thread-count
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.resource.cpu-vcores
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.block-pinning.enabled
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.http.policy
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.webapp.delegation-token-auth-filter.enabled
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.speculative.retry-after-no-speculate
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for fs.s3a.attempts.maximum
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for s3native.stream-buffer-size
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for io.seqfile.local.dir
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.log-aggregation.retain-check-interval-seconds
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for fs.s3n.multipart.copy.block.size
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.encrypt.data.transfer.cipher.key.bitlength
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.sync.behind.writes
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.zk-acl
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for hadoop.ssl.keystores.factory.class
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.split.metainfo.maxsize
+2018-06-22 20:56:47  [ main:3632 ] - [ DEBUG ]  Handling deprecation for fs.s3.maxRetries
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for hadoop.security.random.device.file.path
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.client.nodemanager-connect.max-wait-ms
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.stale.datanode.interval
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.io.sort.mb
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.zk-state-store.parent-path
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.client-am.ipc.max-retries
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for fs.client.resolve.remote.symlinks
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.linux-container-executor.cgroups.strict-resource-usage
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for hadoop.ssl.enabled.protocols
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.cpu.vcores
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.client.failover-retries
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.address
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for hadoop.ssl.enabled
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.replication.max
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.name.dir
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.https.address
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for ipc.client.kill.max
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.committer.setup.cleanup.needed
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.client.domain.socket.data.traffic
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.localizer.cache.target-size-mb
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.admin.client.thread-count
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.block.access.token.enable
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.speculative.retry-after-speculate
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.address
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.restart.recover
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for ipc.client.connect.max.retries
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.store-class
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.short.circuit.shared.memory.watcher.interrupt.check.ms
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for hadoop.tmp.dir
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.handler.count
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.ha.automatic-failover.embedded
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.ttl-ms
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.profile.map.params
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.nodemanagers.heartbeat-interval-ms
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.map.speculative
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.recovery.enabled
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.map.class
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.resource.checked.volumes.minimum
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.recovery.dir
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.counters.max
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.keytab
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.max.extra.edits.segments.retained
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.webhdfs.user.provider.user.pattern
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.client.mmap.enabled
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.map.log.level
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.client.file-block-storage-locations.timeout.millis
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.client.max-cached-nodemanagers-proxies
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.am.scheduler.heartbeat.interval-ms
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for hadoop.fuse.timer.period
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for fs.trash.checkpoint.interval
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.app-checker.class
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.journalnode.http-address
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.am.staging-dir
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.local.dir.minspacestart
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.nm.liveness-monitor.expiry-interval-ms
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for ha.health-monitor.check-interval.ms
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.shuffle.merge.percent
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.retrycache.heap.percent
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.docker-container-executor.exec-name
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for ipc.client.connect.timeout
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.fs.state-store.retry-interval-ms
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.output.fileoutputformat.compress
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.local-dirs
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.recovery.enabled
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for io.native.lib.available
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.store.in-memory.staleness-period-mins
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.outputformat.class
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.am.max-attempts
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for s3.replication
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.input.fileinputformat.inputdir
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for fs.AbstractFileSystem.har.impl
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.image.compress
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.running.map.limit
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.input.buffer.percent
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.webapp.address
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.available-space-volume-choosing-policy.balanced-space-preference-fraction
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.edit.log.autoroll.multiplier.threshold
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for hadoop.security.group.mapping.ldap.ssl
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.checkpoint.check.period
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for fs.defaultFS
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for fs.s3a.multipart.size
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.client.slow.io.warning.threshold.ms
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.am.job.committer.commit-window
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for hadoop.security.group.mapping.ldap.search.attr.group.name
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.container-monitor.procfs-tree.smaps-based-rss.enabled
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.submithostname
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.map.sort.spill.percent
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for hadoop.security.crypto.codec.classes.aes.ctr.nopadding
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.http-address
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for hadoop.security.groups.negative-cache.secs
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for hadoop.ssl.server.conf
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.ifile.readahead
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for s3native.replication
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.client.nodemanager-client-async.thread-pool-max-size
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.staging.root.dir
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.admin.address
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.startup.delay.block.deletion.sec
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.health-checker.interval-ms
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.checkpoint.max-retries
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for s3.stream-buffer-size
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for ftp.client-write-packet-size
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.fsdatasetcache.max.threads.per.volume
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.output.fileoutputformat.compress.codec
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.keytab
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.store.in-memory.initial-delay-mins
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.webapp.address
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.userlog.limit.kb
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.shuffle.fetch.retry.enabled
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.task.container.log.backups
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.heartbeat.interval
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for ha.zookeeper.session-timeout.ms
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for fs.s3a.connection.ssl.enabled
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.webapp.address
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for hadoop.http.authentication.signature.secret.file
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for hadoop.fuse.connection.timeout
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.input.fileinputformat.numinputfiles
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.log-aggregation.compression-type
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for ipc.server.max.connections
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.log-dirs
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.am.resource.mb
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for hadoop.security.groups.cache.secs
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.speculative.minimum-allowed-tasks
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.container-monitor.interval-ms
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.cache.revocation.timeout.ms
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.recovery.store.class
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.combine.progress.records
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for s3.client-write-packet-size
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.instrumentation
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.replication
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.shuffle.transfer.buffer.size
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for hadoop.security.group.mapping.ldap.directory.search.timeout
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.available-space-volume-choosing-policy.balanced-space-threshold
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for hadoop.work.around.non.threadsafe.getpwuid
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.client-am.ipc.max-retries-on-timeouts
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.address
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.taskcontroller
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.indexcache.mb
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.scheduler.maximum-allocation-vcores
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.reduces
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.sleep-delay-before-sigkill.ms
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.address
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.configuration.provider-class
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for hadoop.security.kms.client.encrypted.key.cache.expiry
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.enabled
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for tfile.io.chunk.size
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.acl-modify-job
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for hadoop.registry.zk.session.timeout.ms
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for fs.automatic.close
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for ha.health-monitor.sleep-after-disconnect.ms
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.reduce.tasks.maximum
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.input.fileinputformat.list-status.num-threads
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.directoryscan.threads
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.directoryscan.interval
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.acls.enabled
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.client.short.circuit.replica.stale.threshold.ms
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for hadoop.http.authentication.token.validity
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for fs.s3.block.size
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for ha.failover-controller.graceful-fence.rpc-timeout.ms
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.local.dir.minspacekill
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.resource.du.reserved
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.cleaner.interval-ms
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.datanode.registration.ip-hostname-check
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.intermediate-done-dir
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.http.address
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.backup.http-address
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.edits.noeditlogchannelflush
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.shuffle.input.buffer.percent
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.map.maxattempts
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.http.policy
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.audit.loggers
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for hadoop.security.groups.cache.warn.after.ms
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for io.serializations
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.outofband.heartbeat
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.shuffle.read.timeout
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for hadoop.security.crypto.buffer.size
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for hadoop.http.cross-origin.allowed-methods
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.skip.proc.count.autoincr
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.ifile.readahead.bytes
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.http.policy
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for hadoop.registry.secure
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.safemode.min.datanodes
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.client.file-block-storage-locations.num-threads
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.cluster.local.dir
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.report.address
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.secondary.https-address
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for hadoop.kerberos.kinit.command
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.http-authentication.type
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.block.access.token.lifetime
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.webhdfs.enabled
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.dispatcher.drain-events.timeout
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.delegation.token.max-lifetime
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.avoid.write.stale.datanode
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.drop.cache.behind.writes
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.log-aggregation.retain-seconds
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.complete.cancel.delegation.tokens
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.local.clientfactory.class.name
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.fail-fast
+2018-06-22 20:56:47  [ main:3647 ] - [ DEBUG ]  Handling deprecation for mapreduce.shuffle.connection-keep-alive.timeout
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.num.extra.edits.retained
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.scheduler.minimum-allocation-vcores
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for ipc.client.connect.max.retries.on.timeouts
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.client.retry-interval-ms
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.client.max-retries
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for fs.s3n.block.size
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.map.output.collector.class
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for ha.health-monitor.connect-retry-interval.ms
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.shuffle.max.threads
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for nfs.exports.allowed.hosts
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.client.mmap.cache.size
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.map.tasks.maximum
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for io.file.buffer.size
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.container-metrics.unregister-delay-ms
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.client.datanode-restart.timeout
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for io.mapfile.bloom.size
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for hadoop.security.kms.client.authentication.retry-count
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.checkpoint.txns
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for ipc.client.connect.retry.interval
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.client-write-packet-size
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.shuffle.connect.timeout
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.fs.state-store.uri
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for fs.swift.impl
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for hadoop.registry.zk.connection.timeout.ms
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapred.queue.default.acl-administer-jobs
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.submithostaddress
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.cachereport.intervalMsec
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.shuffle.log.backups
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.am.container.log.limit.kb
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.resourcemanager.minimum.version
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for ftp.blocksize
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.address
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.kerberos.principal.pattern
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for file.stream-buffer-size
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.scheduler.monitor.enable
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.ubertask.maxreduces
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for nfs.allow.insecure.ports
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.nodemanager-connect-retries
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.nm.uploader.thread-count
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for ipc.client.idlethreshold
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for ftp.stream-buffer-size
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.client-server.address
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.client.job.retry-interval
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.client.failover.connection.retries.on.timeouts
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.replication.work.multiplier.per.iteration
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for hadoop.http.authentication.simple.anonymous.allowed
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for hadoop.security.authorization
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.client.nodemanager-connect.retry-interval-ms
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.am.liveness-monitor.expiry-interval-ms
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for fs.har.impl.disable.cache
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.linux-container-executor.resources-handler.class
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.leveldb-timeline-store.read-cache-size
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for hadoop.security.authentication
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.image.compression.codec
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.files.preserve.failedtasks
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.client.read.shortcircuit.streams.cache.size
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.leveldb-timeline-store.path
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.reduce.slowstart.completedmaps
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.minicluster.fixed.ports
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for file.replication
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.ha.automatic-failover.enabled
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.userlog.retain.hours
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.joblist.cache.size
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.accesstime.precision
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.work-preserving-recovery.enabled
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.fs-limits.max-xattrs-per-inode
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.map.output.value.class
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for io.mapfile.bloom.error.rate
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.store.class
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.image.transfer.timeout
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.leveldb-state-store.path
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for nfs.wtmax
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.support.allow.format
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for fs.s3a.multipart.purge
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.secondary.namenode.kerberos.internal.spnego.principal
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for fs.s3a.connection.establish.timeout
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.stream-buffer-size
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.invalidate.work.pct.per.iteration
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.container-executor.class
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for fs.s3a.multipart.purge.age
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.scheduler.client.thread-count
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.top.enabled
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.shuffle.log.separate
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for hadoop.security.kms.client.encrypted.key.cache.low-watermark
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for fs.s3a.fast.buffer.size
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for hadoop.user.group.static.mapping.overrides
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for tfile.fs.input.buffer.size
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.client.cached.conn.retry
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for hadoop.http.authentication.type
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.list.encryption.zones.num.responses
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.map.cpu.vcores
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.path.based.cache.refresh.interval.ms
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.decommission.interval
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.fs-limits.max-directory-items
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.zk-retry-interval-ms
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for ftp.bytes-per-checksum
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.ha.log-roll.period
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.user.home.dir.prefix
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for ipc.client.fallback-to-simple-auth-allowed
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.pmem-check-enabled
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.remote-app-log-dir
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.inotify.max.events.per.rpc
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.profile.maps
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.shuffle.ssl.file.buffer.size
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.healthchecker.script.timeout
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.webapp.https.address
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.resource.percentage-physical-cpu-limit
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.am.command-opts
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.fs-limits.max-xattr-size
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.http.address
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.amlauncher.thread-count
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.blocks.per.postponedblocks.rescan
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.nm.uploader.replication.factor
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for hadoop.registry.zk.root
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for hadoop.jetty.logs.serve.aliases
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.client.failover-proxy-provider
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.admin.acl
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for hadoop.http.cross-origin.max-age
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.am.hard-kill-timeout-ms
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.remote-app-log-dir-suffix
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.principal
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.webapp.address
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.recovery.enable
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.store.in-memory.check-period-mins
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for nfs.mountd.port
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.merge.inmem.threshold
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for fs.df.interval
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.enabled
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.jobhistory.lru.cache.size
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for hadoop.http.cross-origin.allowed-headers
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.profile
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.output.key.class
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.hostname
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.num.checkpoints.retained
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.queuename
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.max-age-ms
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.token.tracking.ids.enabled
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.localizer.client.thread-count
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.uploader.server.thread-count
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.client.mmap.retry.timeout.ms
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.move.thread-count
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.permissions.enabled
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.blockreport.split.threshold
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for fs.AbstractFileSystem.hdfs.impl
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.inputformat.class
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.balance.bandwidthPerSec
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.block.scanner.volume.bytes.per.second
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for hadoop.http.filter.initializers
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.http-authentication.simple.anonymous.allowed
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.default.chunk.view.size
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.client-server.thread-count
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.resource-tracker.address
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.working.dir
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.datestring.cache.size
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.profile.params
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.decommission.blocks.per.interval
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.handler.count
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.image.transfer.bandwidthPerSec
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for rpc.metrics.quantile.enable
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.expire.trackers.interval
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.timeout
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.client.max-retries
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.resource.memory-mb
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.disk-health-checker.min-healthy-disks
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.failed.volumes.tolerated
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.handler-thread-count
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for ipc.server.listen.queue.size
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for fs.s3a.threads.max
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.connect.max-wait.ms
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.fileoutputcommitter.algorithm.version
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.framework.name
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.map.skip.proc.count.autoincr
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.max.split.locations
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.scheduler.class
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.system-metrics-publisher.enabled
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.blocksize
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.nested-level
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.shuffle.connection-keep-alive.enable
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for fs.s3a.threads.keepalivetime
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for fs.s3a.connection.timeout
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for file.client-write-packet-size
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for ha.failover-controller.cli-check.rpc-timeout.ms
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for ha.zookeeper.acl
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.write.stale.datanode.ratio
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.encrypt.data.transfer
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.shared.file.descriptor.paths
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.input.lineinputformat.linespermap
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.delayed.delegation-token.removal-interval-ms
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.localizer.fetch.thread-count
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.client.failover.max.attempts
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.scheduler.address
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.webapp.cross-origin.enabled
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.client.read.shortcircuit.streams.cache.expiry.ms
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.leveldb-timeline-store.start-time-write-cache-size
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.health-checker.script.timeout-ms
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.fs.state-store.num-retries
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for hadoop.ssl.require.client.cert
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for hadoop.security.uid.cache.secs
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.keytab
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.client.read.shortcircuit.skip.checksum
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.ha.automatic-failover.zk-base-path
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.shuffle.ssl.enabled
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.log.level
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for hadoop.registry.rm.enabled
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.dns.interface
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.system-metrics-publisher.dispatcher.pool-size
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.speculative.speculative-cap-running-tasks
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.block.id.layout.upgrade.threads
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.use.datanode.hostname
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.client.context
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.ha.enabled
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for mapred.reducer.new-api
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.delegation.token.renew-interval
+2018-06-22 20:56:47  [ main:3663 ] - [ DEBUG ]  Handling deprecation for dfs.blockreport.intervalMsec
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for fs.s3a.multipart.threshold
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for hadoop.http.cross-origin.enabled
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.shuffle.memory.limit.percent
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for dfs.https.server.keystore.resource
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for io.map.index.skip
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.hdfs-servers
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.taskscheduler
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.kerberos.internal.spnego.principal
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.state-store.max-completed-applications
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for mapreduce.map.output.compress
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for hadoop.security.kms.client.encrypted.key.cache.num.refill.threads
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for fs.s3n.multipart.uploads.block.size
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.merge.progress.records
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.dns.interface
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for map.sort.class
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.aux-services.mapreduce_shuffle.class
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for tfile.fs.output.buffer.size
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for fs.du.interval
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for dfs.client.failover.connection.retries
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.top.window.num.buckets
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.dir
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for fs.s3a.buffer.dir
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.shuffle.retry-delay.max.ms
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.uploader.server.address
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for mapreduce.client.progressmonitor.pollinterval
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.shuffle.log.limit.kb
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.max.locked.memory
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.retrycache.expirytime.millis
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.scan.period.hours
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for dfs.client.block.write.replace-datanode-on-failure.best-effort
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.move.interval-ms
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for dfs.ha.fencing.ssh.connect-timeout
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.fs-limits.max-component-length
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for hadoop.registry.zk.quorum
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for hadoop.http.cross-origin.allowed-origins
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.enable.retrycache
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.du.reserved
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.state-store-class
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.ipc.address
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for hadoop.registry.system.acls
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for dfs.client.block.write.replace-datanode-on-failure.policy
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.path.based.cache.retry.interval.ms
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for hadoop.security.crypto.cipher.suite
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for dfs.ha.tail-edits.period
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.profile.reduce.params
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.generic-application-history.max-applications
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for hadoop.registry.jaas.context
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.hostname
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.memory.mb
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for hadoop.security.group.mapping.ldap.search.filter.group
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for hadoop.http.authentication.kerberos.principal
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for hadoop.security.group.mapping.ldap.search.filter.user
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.disk-health-checker.min-free-space-per-disk-mb
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.edits.dir
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for yarn.client.failover-retries-on-socket-timeouts
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.decommission.max.concurrent.tracked.nodes
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for mapreduce.client.completion.pollinterval
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.name.dir.restore
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.secondary.http-address
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.recovery.store.leveldb.path
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.store.class
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for s3.bytes-per-checksum
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.windows-container.cpu-limit.enabled
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.webapp.https.address
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.vmem-pmem-ratio
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.checkpoint.period
+2018-06-22 20:56:47  [ main:3679 ] - [ DEBUG ]  Handling deprecation for dfs.ha.automatic-failover.enabled
+2018-06-22 20:56:47  [ main:3710 ] - [ INFO ]  Submitting tokens for job: job_local950759712_0001
+2018-06-22 20:56:47  [ main:3757 ] - [ DEBUG ]  PrivilegedAction as:Administrator (auth:SIMPLE) from:org.apache.hadoop.fs.FileContext.getAbstractFileSystem(FileContext.java:331)
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for all properties in config...
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.address
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.scheduler.monitor.policies
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.resource.check.interval
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.client.thread-count
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.am.containerlauncher.threadpool-initial-size
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapred.child.java.opts
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.retiredjobs.cache.size
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for dfs.client.https.need-auth
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for yarn.admin.acl
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.am.job.committer.cancel-timeout
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.emit-timeline-data
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for fs.ftp.host.port
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.avoid.read.stale.datanode
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for dfs.journalnode.rpc-address
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.end-notification.retry.attempts
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.leveldb-timeline-store.ttl-interval-ms
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.leveldb-state-store.path
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapred.mapper.new-api
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for yarn.ipc.rpc.class
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for ipc.client.connection.maxidletime
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.process-kill-wait.ms
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.cluster.acls.enabled
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.handler.count
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for io.map.index.interval
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.https-address
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.profile.reduces
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for fs.s3n.multipart.uploads.enabled
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for io.seqfile.sorter.recordlimit
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.ubertask.maxmaps
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.tasks.sleeptimebeforesigkill
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for hadoop.util.hash.type
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.replication.min
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.container-manager.thread-count
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.jobhistory.block.size
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.fs-limits.min-block-size
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.app-submission.cross-platform
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for fs.AbstractFileSystem.file.impl
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for net.topology.script.number.args
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.container-tokens.master-key-rolling-interval-secs
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.map.output.compress.codec
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.reducer.preempt.delay.sec
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for s3native.bytes-per-checksum
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.path.based.cache.block.map.allocation.percent
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.windows-container.memory-limit.enabled
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.input.fileinputformat.split.minsize
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for hadoop.security.group.mapping
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.system.dir
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.end-notification.max.attempts
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.markreset.buffer.percent
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.cache.revocation.polling.ms
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.speculative
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.localizer.cache.cleanup.interval-ms
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.lazypersist.file.scrub.interval.sec
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for fs.s3a.threads.core
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.recovery.store.fs.uri
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.leveldb-timeline-store.start-time-read-cache-size
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for hadoop.registry.zk.retry.interval.ms
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.keytab
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.replication.interval
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.admin.address
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.maps
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for nfs.dump.dir
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.user.name
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.maxtasks.perjob
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.ubertask.enable
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.reduce.class
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.delete.debug-delay-sec
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.ttl-enable
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.fs.state-store.retry-policy-spec
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.skip.maxgroups
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for dfs.client.use.datanode.hostname
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for fs.trash.interval
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.am.max-attempts
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.heartbeats.in.second
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.zk-num-retries
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for s3.blocksize
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.data.dir
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.persist.jobstatus.active
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.shuffle.parallelcopies
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for fs.s3.buffer.dir
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.done-dir
+2018-06-22 20:56:47  [ main:4069 ] - [ DEBUG ]  Handling deprecation for hadoop.security.instrumentation.requires.admin
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.registry.zk.retry.ceiling.ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for nfs.rtmax
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.data.dir.perm
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.container.liveness-monitor.interval-ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.env-whitelist
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.backup.address
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.xattrs.enabled
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.readahead.bytes
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.bp-ready.timeout
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.client.job.max-retries
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.cleaner.enable
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.client.block.write.retries
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.http.address
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.linux-container-executor.cgroups.hierarchy
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for ha.failover-controller.graceful-fence.connection.retries
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.recovery.enabled
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.am.container.log.backups
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.safemode.threshold-pct
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.disk-health-checker.interval-ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.security.java.secure.random.algorithm
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.list.cache.directives.num.responses
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.dns.nameserver
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.cluster.temp.dir
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for fs.s3a.max.total.tasks
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.maxattempts
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.client.submit.file.replication
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.shuffle.port
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.fail-fast
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.resource-tracker.client.thread-count
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.replication.considerLoad
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.webapp.cross-origin.enabled
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.edits.journal-plugin.qjournal
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.client.write.exclude.nodes.cache.expiry.interval.millis
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.delete.thread-count
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.client.mmap.cache.timeout.ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.admin-env
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for io.skip.checksum.errors
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.hostname
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.proxy-user-privileges.enabled
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.speculative.speculative-cap-total-tasks
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.acl.enable
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for fs.s3a.fast.upload
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for file.blocksize
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.speculative.slowtaskthreshold
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for ftp.replication
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.cleaner.initial-delay-mins
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for s3native.client-write-packet-size
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.rpc.socket.factory.class.default
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for file.bytes-per-checksum
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.slow.io.warning.threshold.ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for io.seqfile.lazydecompress
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.skip.start.attempts
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.reject-unresolved-dn-topology-mapping
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.common.configuration.version
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.client.thread-count
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.drop.cache.behind.reads
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.admin.address
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.output.value.class
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.output.fileoutputformat.outputdir
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.taskcache.levels
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.linux-container-executor.nonsecure-mode.user-pattern
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.zk-timeout-ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.max-completed-applications
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.jvm.numtasks
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.cleaner.period-mins
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.tasktracker.maxblacklists
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.top.num.users
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.linux-container-executor.cgroups.mount
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.checksum.algo.impl
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.end-notification.max.retry.interval
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.acl-view-job
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.classloader
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.log-aggregation-enable
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.shuffle.fetch.retry.interval-ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.nodemanager.minimum.version
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.security.kms.client.encrypted.key.cache.size
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.am.job.task.listener.thread-count
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.am.resource.cpu-vcores
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.edit.log.autoroll.check.interval.ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.output.fileoutputformat.compress.type
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.hdfs.configuration.version
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.security.group.mapping.ldap.search.attr.member
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.log.retain-seconds
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.local-cache.max-files-per-directory
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.end-notification.retry.interval
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.ssl.client.conf
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.root-dir
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.journalnode.https-address
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.shuffle.fetch.retry.timeout-ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.bytes-per-checksum
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.max.objects
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.instrumentation
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.max.transfer.threads
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.block.access.key.update.interval
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.jobhistory.task.numberprogresssplits
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.map.output.key.class
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.map.memory.mb
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for ha.failover-controller.new-active.rpc-timeout.ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.ssl.hostname.verifier
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.client.read.shortcircuit
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.hdfs-blocks-metadata.enabled
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.healthchecker.interval
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.image.transfer.chunksize
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.taskmemorymanager.monitoringinterval
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.client.https.keystore.resource
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.connect.retry-interval.ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.webapp.address
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for s3native.blocksize
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.scheduler.minimum-allocation-mb
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.cleaner.resource-sleep-ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for net.topology.impl
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.client.failover.sleep.base.millis
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.permissions.superusergroup
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for io.seqfile.compress.blocksize
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.registry.zk.retry.times
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for fs.AbstractFileSystem.ftp.impl
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.checkpoint.edits.dir
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.running.reduce.limit
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.blockreport.initialDelay
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.heartbeat.recheck-interval
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.safemode.extension
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.scheduler.maximum-allocation-mb
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.reduce.shuffle.consumer.plugin.class
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.vmem-check-enabled
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.io.sort.factor
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.persist.jobstatus.dir
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.client.failover.sleep.max.millis
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.delegation.key.update-interval
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.rpc.protection
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for fs.permissions.umask-mode
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for fs.s3.sleepTimeSeconds
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for ha.health-monitor.rpc-timeout.ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.http.staticuser.user
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for fs.s3a.connection.maximum
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.linux-container-executor.nonsecure-mode.limit-users
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for fs.s3a.paging.maximum
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for fs.AbstractFileSystem.viewfs.impl
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for fs.ftp.host
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.linux-container-executor.nonsecure-mode.local-user
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for fs.s3a.impl
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.http.authentication.kerberos.keytab
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.fs-limits.max-blocks-per-file
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.http.threads
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.dns.nameserver
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.am-rm-tokens.master-key-rolling-interval-secs
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.client.block.write.replace-datanode-on-failure.enable
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for io.compression.codec.bzip2.library
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.map.skip.maxrecords
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.client.use.legacy.blockreader.local
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.checkpoint.dir
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.top.windows.minutes
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.maxtaskfailures.per.tracker
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for net.topology.node.switch.mapping.impl
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.shuffle.max.connections
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.loadedjobs.cache.size
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.storage.policy.enabled
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.client.application-client-protocol.poll-interval-ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.localizer.address
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.list.cache.pools.num.responses
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for nfs.server.port
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.client.output.filter
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.client.best-effort
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for ha.zookeeper.parent-znode
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.persist.jobstatus.hours
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.admin.thread-count
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.resource.cpu-vcores
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.block-pinning.enabled
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.http.policy
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.webapp.delegation-token-auth-filter.enabled
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.speculative.retry-after-no-speculate
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for fs.s3a.attempts.maximum
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for s3native.stream-buffer-size
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for io.seqfile.local.dir
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.log-aggregation.retain-check-interval-seconds
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for fs.s3n.multipart.copy.block.size
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.encrypt.data.transfer.cipher.key.bitlength
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.sync.behind.writes
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.zk-acl
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.ssl.keystores.factory.class
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.split.metainfo.maxsize
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for fs.s3.maxRetries
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.security.random.device.file.path
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.client.nodemanager-connect.max-wait-ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.stale.datanode.interval
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.io.sort.mb
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.zk-state-store.parent-path
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.client-am.ipc.max-retries
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for fs.client.resolve.remote.symlinks
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.linux-container-executor.cgroups.strict-resource-usage
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.ssl.enabled.protocols
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.cpu.vcores
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.client.failover-retries
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.address
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.ssl.enabled
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.replication.max
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.name.dir
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.https.address
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for ipc.client.kill.max
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.committer.setup.cleanup.needed
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.client.domain.socket.data.traffic
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.localizer.cache.target-size-mb
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.admin.client.thread-count
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.block.access.token.enable
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.speculative.retry-after-speculate
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.address
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.restart.recover
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for ipc.client.connect.max.retries
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.store-class
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.short.circuit.shared.memory.watcher.interrupt.check.ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.tmp.dir
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.handler.count
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.ha.automatic-failover.embedded
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.ttl-ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.profile.map.params
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.nodemanagers.heartbeat-interval-ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.map.speculative
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.recovery.enabled
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.map.class
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.resource.checked.volumes.minimum
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.recovery.dir
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.counters.max
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.keytab
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.max.extra.edits.segments.retained
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.webhdfs.user.provider.user.pattern
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.client.mmap.enabled
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.map.log.level
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.client.file-block-storage-locations.timeout.millis
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.client.max-cached-nodemanagers-proxies
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.am.scheduler.heartbeat.interval-ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.fuse.timer.period
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for fs.trash.checkpoint.interval
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.app-checker.class
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.journalnode.http-address
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.am.staging-dir
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.local.dir.minspacestart
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nm.liveness-monitor.expiry-interval-ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for ha.health-monitor.check-interval.ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.shuffle.merge.percent
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.retrycache.heap.percent
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.docker-container-executor.exec-name
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for ipc.client.connect.timeout
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.fs.state-store.retry-interval-ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.output.fileoutputformat.compress
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.local-dirs
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.recovery.enabled
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for io.native.lib.available
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.store.in-memory.staleness-period-mins
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.outputformat.class
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.am.max-attempts
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for s3.replication
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.input.fileinputformat.inputdir
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for fs.AbstractFileSystem.har.impl
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.image.compress
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.running.map.limit
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.input.buffer.percent
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.webapp.address
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.available-space-volume-choosing-policy.balanced-space-preference-fraction
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.edit.log.autoroll.multiplier.threshold
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.security.group.mapping.ldap.ssl
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.checkpoint.check.period
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for fs.defaultFS
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for fs.s3a.multipart.size
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.client.slow.io.warning.threshold.ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.am.job.committer.commit-window
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.security.group.mapping.ldap.search.attr.group.name
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.container-monitor.procfs-tree.smaps-based-rss.enabled
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.submithostname
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.map.sort.spill.percent
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.security.crypto.codec.classes.aes.ctr.nopadding
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.http-address
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.security.groups.negative-cache.secs
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.ssl.server.conf
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.ifile.readahead
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for s3native.replication
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.client.nodemanager-client-async.thread-pool-max-size
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.staging.root.dir
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.admin.address
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.startup.delay.block.deletion.sec
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.health-checker.interval-ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.checkpoint.max-retries
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for s3.stream-buffer-size
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for ftp.client-write-packet-size
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.fsdatasetcache.max.threads.per.volume
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.output.fileoutputformat.compress.codec
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.keytab
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.store.in-memory.initial-delay-mins
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.webapp.address
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.userlog.limit.kb
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.shuffle.fetch.retry.enabled
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.task.container.log.backups
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.heartbeat.interval
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for ha.zookeeper.session-timeout.ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for fs.s3a.connection.ssl.enabled
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.webapp.address
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.http.authentication.signature.secret.file
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.fuse.connection.timeout
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.input.fileinputformat.numinputfiles
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.log-aggregation.compression-type
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for ipc.server.max.connections
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.log-dirs
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.am.resource.mb
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.security.groups.cache.secs
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.speculative.minimum-allowed-tasks
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.container-monitor.interval-ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.cache.revocation.timeout.ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.recovery.store.class
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.combine.progress.records
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for s3.client-write-packet-size
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.instrumentation
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.replication
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.shuffle.transfer.buffer.size
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.security.group.mapping.ldap.directory.search.timeout
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.available-space-volume-choosing-policy.balanced-space-threshold
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.work.around.non.threadsafe.getpwuid
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.client-am.ipc.max-retries-on-timeouts
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.address
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.taskcontroller
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.indexcache.mb
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.scheduler.maximum-allocation-vcores
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.reduces
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.sleep-delay-before-sigkill.ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.address
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.configuration.provider-class
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.security.kms.client.encrypted.key.cache.expiry
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.enabled
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for tfile.io.chunk.size
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.acl-modify-job
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.registry.zk.session.timeout.ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for fs.automatic.close
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for ha.health-monitor.sleep-after-disconnect.ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.reduce.tasks.maximum
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.input.fileinputformat.list-status.num-threads
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.directoryscan.threads
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.directoryscan.interval
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.acls.enabled
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.client.short.circuit.replica.stale.threshold.ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.http.authentication.token.validity
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for fs.s3.block.size
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for ha.failover-controller.graceful-fence.rpc-timeout.ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.local.dir.minspacekill
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.resource.du.reserved
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.cleaner.interval-ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.datanode.registration.ip-hostname-check
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.intermediate-done-dir
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.http.address
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.backup.http-address
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.edits.noeditlogchannelflush
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.shuffle.input.buffer.percent
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.map.maxattempts
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for yarn.http.policy
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.audit.loggers
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.security.groups.cache.warn.after.ms
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for io.serializations
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.outofband.heartbeat
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.shuffle.read.timeout
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.security.crypto.buffer.size
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.http.cross-origin.allowed-methods
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.skip.proc.count.autoincr
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.ifile.readahead.bytes
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.http.policy
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for hadoop.registry.secure
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.safemode.min.datanodes
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.client.file-block-storage-locations.num-threads
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.cluster.local.dir
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.report.address
+2018-06-22 20:56:47  [ main:4085 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.secondary.https-address
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.kerberos.kinit.command
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.http-authentication.type
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.block.access.token.lifetime
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.webhdfs.enabled
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.dispatcher.drain-events.timeout
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.delegation.token.max-lifetime
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.avoid.write.stale.datanode
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.drop.cache.behind.writes
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.log-aggregation.retain-seconds
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.complete.cancel.delegation.tokens
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.local.clientfactory.class.name
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.fail-fast
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.shuffle.connection-keep-alive.timeout
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.num.extra.edits.retained
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.scheduler.minimum-allocation-vcores
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for ipc.client.connect.max.retries.on.timeouts
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.client.retry-interval-ms
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.client.max-retries
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for fs.s3n.block.size
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.map.output.collector.class
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for ha.health-monitor.connect-retry-interval.ms
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.shuffle.max.threads
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for nfs.exports.allowed.hosts
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.client.mmap.cache.size
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.map.tasks.maximum
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for io.file.buffer.size
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.container-metrics.unregister-delay-ms
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.client.datanode-restart.timeout
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for io.mapfile.bloom.size
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.security.kms.client.authentication.retry-count
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.checkpoint.txns
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for ipc.client.connect.retry.interval
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.client-write-packet-size
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.shuffle.connect.timeout
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.fs.state-store.uri
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for fs.swift.impl
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.registry.zk.connection.timeout.ms
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapred.queue.default.acl-administer-jobs
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.submithostaddress
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.cachereport.intervalMsec
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.shuffle.log.backups
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.am.container.log.limit.kb
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.resourcemanager.minimum.version
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for ftp.blocksize
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.address
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.kerberos.principal.pattern
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for file.stream-buffer-size
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.scheduler.monitor.enable
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.ubertask.maxreduces
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for nfs.allow.insecure.ports
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.nodemanager-connect-retries
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.nm.uploader.thread-count
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for ipc.client.idlethreshold
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for ftp.stream-buffer-size
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.client-server.address
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.client.job.retry-interval
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.client.failover.connection.retries.on.timeouts
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.replication.work.multiplier.per.iteration
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.http.authentication.simple.anonymous.allowed
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.security.authorization
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.client.nodemanager-connect.retry-interval-ms
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.am.liveness-monitor.expiry-interval-ms
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for fs.har.impl.disable.cache
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.linux-container-executor.resources-handler.class
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.leveldb-timeline-store.read-cache-size
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.security.authentication
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.image.compression.codec
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.files.preserve.failedtasks
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.client.read.shortcircuit.streams.cache.size
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.leveldb-timeline-store.path
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.reduce.slowstart.completedmaps
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.minicluster.fixed.ports
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for file.replication
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.ha.automatic-failover.enabled
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.userlog.retain.hours
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.joblist.cache.size
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.accesstime.precision
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.work-preserving-recovery.enabled
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.fs-limits.max-xattrs-per-inode
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.map.output.value.class
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for io.mapfile.bloom.error.rate
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.store.class
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.image.transfer.timeout
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.leveldb-state-store.path
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for nfs.wtmax
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.support.allow.format
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for fs.s3a.multipart.purge
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.secondary.namenode.kerberos.internal.spnego.principal
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for fs.s3a.connection.establish.timeout
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.stream-buffer-size
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.invalidate.work.pct.per.iteration
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.container-executor.class
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for fs.s3a.multipart.purge.age
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.scheduler.client.thread-count
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.top.enabled
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.shuffle.log.separate
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.security.kms.client.encrypted.key.cache.low-watermark
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for fs.s3a.fast.buffer.size
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.user.group.static.mapping.overrides
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for tfile.fs.input.buffer.size
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.client.cached.conn.retry
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.http.authentication.type
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.list.encryption.zones.num.responses
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.map.cpu.vcores
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.path.based.cache.refresh.interval.ms
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.decommission.interval
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.fs-limits.max-directory-items
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.zk-retry-interval-ms
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for ftp.bytes-per-checksum
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.ha.log-roll.period
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.user.home.dir.prefix
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for ipc.client.fallback-to-simple-auth-allowed
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.pmem-check-enabled
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.remote-app-log-dir
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.inotify.max.events.per.rpc
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.profile.maps
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.shuffle.ssl.file.buffer.size
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.healthchecker.script.timeout
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.webapp.https.address
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.resource.percentage-physical-cpu-limit
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.am.command-opts
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.fs-limits.max-xattr-size
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.http.address
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.amlauncher.thread-count
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.blocks.per.postponedblocks.rescan
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.nm.uploader.replication.factor
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.registry.zk.root
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.jetty.logs.serve.aliases
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.client.failover-proxy-provider
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.admin.acl
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.http.cross-origin.max-age
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.am.hard-kill-timeout-ms
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.remote-app-log-dir-suffix
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.principal
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.webapp.address
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.recovery.enable
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.store.in-memory.check-period-mins
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for nfs.mountd.port
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.merge.inmem.threshold
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for fs.df.interval
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.enabled
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.jobhistory.lru.cache.size
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.http.cross-origin.allowed-headers
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.profile
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.output.key.class
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.hostname
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.num.checkpoints.retained
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.queuename
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.max-age-ms
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.token.tracking.ids.enabled
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.localizer.client.thread-count
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.uploader.server.thread-count
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.client.mmap.retry.timeout.ms
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.move.thread-count
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.permissions.enabled
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.blockreport.split.threshold
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for fs.AbstractFileSystem.hdfs.impl
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.inputformat.class
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.balance.bandwidthPerSec
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.block.scanner.volume.bytes.per.second
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.http.filter.initializers
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.http-authentication.simple.anonymous.allowed
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.default.chunk.view.size
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.client-server.thread-count
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.resource-tracker.address
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.working.dir
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.datestring.cache.size
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.profile.params
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.decommission.blocks.per.interval
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.handler.count
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.image.transfer.bandwidthPerSec
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for rpc.metrics.quantile.enable
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.expire.trackers.interval
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.timeout
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.client.max-retries
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.resource.memory-mb
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.disk-health-checker.min-healthy-disks
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.failed.volumes.tolerated
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.handler-thread-count
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for ipc.server.listen.queue.size
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for fs.s3a.threads.max
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.connect.max-wait.ms
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.fileoutputcommitter.algorithm.version
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.framework.name
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.map.skip.proc.count.autoincr
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.max.split.locations
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.scheduler.class
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.system-metrics-publisher.enabled
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.blocksize
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.nested-level
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.shuffle.connection-keep-alive.enable
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for fs.s3a.threads.keepalivetime
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for fs.s3a.connection.timeout
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for file.client-write-packet-size
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for ha.failover-controller.cli-check.rpc-timeout.ms
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for ha.zookeeper.acl
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.write.stale.datanode.ratio
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.encrypt.data.transfer
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.shared.file.descriptor.paths
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.input.lineinputformat.linespermap
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.delayed.delegation-token.removal-interval-ms
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.localizer.fetch.thread-count
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.client.failover.max.attempts
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.scheduler.address
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.webapp.cross-origin.enabled
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.client.read.shortcircuit.streams.cache.expiry.ms
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.leveldb-timeline-store.start-time-write-cache-size
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.health-checker.script.timeout-ms
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.fs.state-store.num-retries
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.ssl.require.client.cert
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.security.uid.cache.secs
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.keytab
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.client.read.shortcircuit.skip.checksum
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.ha.automatic-failover.zk-base-path
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.shuffle.ssl.enabled
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.log.level
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.registry.rm.enabled
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.tasktracker.dns.interface
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.system-metrics-publisher.dispatcher.pool-size
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.speculative.speculative-cap-running-tasks
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.block.id.layout.upgrade.threads
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.use.datanode.hostname
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.client.context
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.ha.enabled
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapred.reducer.new-api
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.delegation.token.renew-interval
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.blockreport.intervalMsec
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for fs.s3a.multipart.threshold
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.http.cross-origin.enabled
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.shuffle.memory.limit.percent
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.https.server.keystore.resource
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for io.map.index.skip
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.hdfs-servers
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobtracker.taskscheduler
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.kerberos.internal.spnego.principal
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.state-store.max-completed-applications
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.map.output.compress
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.security.kms.client.encrypted.key.cache.num.refill.threads
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for fs.s3n.multipart.uploads.block.size
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.merge.progress.records
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.dns.interface
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for map.sort.class
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.aux-services.mapreduce_shuffle.class
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for tfile.fs.output.buffer.size
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for fs.du.interval
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.client.failover.connection.retries
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.top.window.num.buckets
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.job.dir
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for fs.s3a.buffer.dir
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.shuffle.retry-delay.max.ms
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.uploader.server.address
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.client.progressmonitor.pollinterval
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.app.mapreduce.shuffle.log.limit.kb
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.max.locked.memory
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.retrycache.expirytime.millis
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.scan.period.hours
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.client.block.write.replace-datanode-on-failure.best-effort
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.move.interval-ms
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.ha.fencing.ssh.connect-timeout
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.fs-limits.max-component-length
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.registry.zk.quorum
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.http.cross-origin.allowed-origins
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.enable.retrycache
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.du.reserved
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.state-store-class
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.datanode.ipc.address
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.registry.system.acls
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.client.block.write.replace-datanode-on-failure.policy
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.path.based.cache.retry.interval.ms
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.security.crypto.cipher.suite
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.ha.tail-edits.period
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.task.profile.reduce.params
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.timeline-service.generic-application-history.max-applications
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.registry.jaas.context
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.hostname
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.reduce.memory.mb
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.security.group.mapping.ldap.search.filter.group
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.http.authentication.kerberos.principal
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for hadoop.security.group.mapping.ldap.search.filter.user
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.disk-health-checker.min-free-space-per-disk-mb
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.edits.dir
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.client.failover-retries-on-socket-timeouts
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.decommission.max.concurrent.tracked.nodes
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.client.completion.pollinterval
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.name.dir.restore
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.secondary.http-address
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for mapreduce.jobhistory.recovery.store.leveldb.path
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.sharedcache.store.class
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for s3.bytes-per-checksum
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.windows-container.cpu-limit.enabled
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.resourcemanager.webapp.https.address
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for yarn.nodemanager.vmem-pmem-ratio
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.namenode.checkpoint.period
+2018-06-22 20:56:47  [ main:4100 ] - [ DEBUG ]  Handling deprecation for dfs.ha.automatic-failover.enabled
+2018-06-22 20:56:47  [ main:4194 ] - [ INFO ]  The url to track the job: http://localhost:8080/
+2018-06-22 20:56:47  [ main:4194 ] - [ INFO ]  Running job: job_local950759712_0001
+2018-06-22 20:56:47  [ main:4210 ] - [ DEBUG ]  PrivilegedAction as:Administrator (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+2018-06-22 20:56:47  [ main:4210 ] - [ DEBUG ]  PrivilegedAction as:Administrator (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+2018-06-22 20:56:47  [ Thread-16:4210 ] - [ INFO ]  OutputCommitter set in config null
+2018-06-22 20:56:47  [ Thread-16:4241 ] - [ INFO ]  File Output Committer Algorithm version is 1
+2018-06-22 20:56:47  [ Thread-16:4246 ] - [ INFO ]  OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2018-06-22 20:56:47  [ Thread-16:4278 ] - [ DEBUG ]  Starting mapper thread pool executor.
+2018-06-22 20:56:47  [ Thread-16:4278 ] - [ DEBUG ]  Max local threads: 1
+2018-06-22 20:56:47  [ Thread-16:4278 ] - [ DEBUG ]  Map tasks to process: 3
+2018-06-22 20:56:47  [ Thread-16:4278 ] - [ INFO ]  Waiting for map tasks
+2018-06-22 20:56:47  [ LocalJobRunner Map Task Executor #0:4278 ] - [ INFO ]  Starting task: attempt_local950759712_0001_m_000000_0
+2018-06-22 20:56:47  [ LocalJobRunner Map Task Executor #0:4294 ] - [ DEBUG ]  currentIndex 0   0:0
+2018-06-22 20:56:47  [ LocalJobRunner Map Task Executor #0:4310 ] - [ DEBUG ]  mapreduce.cluster.local.dir for child : /tmp/hadoop-Administrator/mapred/local/localRunner//Administrator/jobcache/job_local950759712_0001/attempt_local950759712_0001_m_000000_0
+2018-06-22 20:56:47  [ LocalJobRunner Map Task Executor #0:4310 ] - [ DEBUG ]  using new api for output committer
+2018-06-22 20:56:47  [ LocalJobRunner Map Task Executor #0:4310 ] - [ INFO ]  File Output Committer Algorithm version is 1
+2018-06-22 20:56:47  [ LocalJobRunner Map Task Executor #0:4372 ] - [ INFO ]  ProcfsBasedProcessTree currently is supported only on Linux.
+2018-06-22 20:56:47  [ LocalJobRunner Map Task Executor #0:4513 ] - [ INFO ]   Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@7763bf
+2018-06-22 20:56:47  [ LocalJobRunner Map Task Executor #0:4528 ] - [ INFO ]  Processing split: file:/H:/input2/two.txt:0+73
+2018-06-22 20:56:47  [ LocalJobRunner Map Task Executor #0:4528 ] - [ DEBUG ]  Trying map output collector class: org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-06-22 20:56:47  [ Finalizer:4560 ] - [ DEBUG ]  finalize() called.
+2018-06-22 20:56:47  [ Finalizer:4560 ] - [ DEBUG ]  finalize() called.
+2018-06-22 20:56:47  [ LocalJobRunner Map Task Executor #0:4591 ] - [ INFO ]  (EQUATOR) 0 kvi 26214396(104857584)
+2018-06-22 20:56:47  [ LocalJobRunner Map Task Executor #0:4591 ] - [ INFO ]  mapreduce.task.io.sort.mb: 100
+2018-06-22 20:56:47  [ LocalJobRunner Map Task Executor #0:4591 ] - [ INFO ]  soft limit at 83886080
+2018-06-22 20:56:47  [ LocalJobRunner Map Task Executor #0:4591 ] - [ INFO ]  bufstart = 0; bufvoid = 104857600
+2018-06-22 20:56:47  [ LocalJobRunner Map Task Executor #0:4591 ] - [ INFO ]  kvstart = 26214396; length = 6553600
+2018-06-22 20:56:47  [ LocalJobRunner Map Task Executor #0:4591 ] - [ INFO ]  Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-06-22 20:56:47  [ LocalJobRunner Map Task Executor #0:4591 ] - [ INFO ]  
+2018-06-22 20:56:47  [ LocalJobRunner Map Task Executor #0:4591 ] - [ INFO ]  Starting flush of map output
+2018-06-22 20:56:47  [ LocalJobRunner Map Task Executor #0:4591 ] - [ INFO ]  Spilling map output
+2018-06-22 20:56:47  [ LocalJobRunner Map Task Executor #0:4591 ] - [ INFO ]  bufstart = 0; bufend = 101; bufvoid = 104857600
+2018-06-22 20:56:47  [ LocalJobRunner Map Task Executor #0:4591 ] - [ INFO ]  kvstart = 26214396(104857584); kvend = 26214396(104857584); length = 1/6553600
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4622 ] - [ INFO ]  Finished spill 0
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4638 ] - [ INFO ]  Task:attempt_local950759712_0001_m_000000_0 is done. And is in the process of committing
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4638 ] - [ INFO ]  map
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4638 ] - [ INFO ]  Task 'attempt_local950759712_0001_m_000000_0' done.
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4638 ] - [ INFO ]  Finishing task: attempt_local950759712_0001_m_000000_0
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4638 ] - [ INFO ]  Starting task: attempt_local950759712_0001_m_000001_0
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4638 ] - [ DEBUG ]  currentIndex 0   0:0
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4638 ] - [ DEBUG ]  mapreduce.cluster.local.dir for child : /tmp/hadoop-Administrator/mapred/local/localRunner//Administrator/jobcache/job_local950759712_0001/attempt_local950759712_0001_m_000001_0
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4638 ] - [ DEBUG ]  using new api for output committer
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4638 ] - [ INFO ]  File Output Committer Algorithm version is 1
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4638 ] - [ INFO ]  ProcfsBasedProcessTree currently is supported only on Linux.
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4778 ] - [ INFO ]   Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@1b1dd48
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4778 ] - [ INFO ]  Processing split: file:/H:/input2/one.txt:0+56
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4778 ] - [ DEBUG ]  Trying map output collector class: org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4794 ] - [ INFO ]  (EQUATOR) 0 kvi 26214396(104857584)
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4794 ] - [ INFO ]  mapreduce.task.io.sort.mb: 100
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4794 ] - [ INFO ]  soft limit at 83886080
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4794 ] - [ INFO ]  bufstart = 0; bufvoid = 104857600
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4794 ] - [ INFO ]  kvstart = 26214396; length = 6553600
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4810 ] - [ INFO ]  Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4810 ] - [ INFO ]  
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4810 ] - [ INFO ]  Starting flush of map output
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4810 ] - [ INFO ]  Spilling map output
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4810 ] - [ INFO ]  bufstart = 0; bufend = 84; bufvoid = 104857600
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4810 ] - [ INFO ]  kvstart = 26214396(104857584); kvend = 26214396(104857584); length = 1/6553600
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4810 ] - [ INFO ]  Finished spill 0
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4810 ] - [ INFO ]  Task:attempt_local950759712_0001_m_000001_0 is done. And is in the process of committing
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4810 ] - [ INFO ]  map
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4810 ] - [ INFO ]  Task 'attempt_local950759712_0001_m_000001_0' done.
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4810 ] - [ INFO ]  Finishing task: attempt_local950759712_0001_m_000001_0
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4810 ] - [ INFO ]  Starting task: attempt_local950759712_0001_m_000002_0
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4810 ] - [ DEBUG ]  currentIndex 0   0:0
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4810 ] - [ DEBUG ]  mapreduce.cluster.local.dir for child : /tmp/hadoop-Administrator/mapred/local/localRunner//Administrator/jobcache/job_local950759712_0001/attempt_local950759712_0001_m_000002_0
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4810 ] - [ DEBUG ]  using new api for output committer
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4810 ] - [ INFO ]  File Output Committer Algorithm version is 1
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4810 ] - [ INFO ]  ProcfsBasedProcessTree currently is supported only on Linux.
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4950 ] - [ INFO ]   Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@1d9029c
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4950 ] - [ INFO ]  Processing split: file:/H:/input2/three.txt:0+56
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4950 ] - [ DEBUG ]  Trying map output collector class: org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4982 ] - [ INFO ]  (EQUATOR) 0 kvi 26214396(104857584)
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4982 ] - [ INFO ]  mapreduce.task.io.sort.mb: 100
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4982 ] - [ INFO ]  soft limit at 83886080
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4982 ] - [ INFO ]  bufstart = 0; bufvoid = 104857600
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4982 ] - [ INFO ]  kvstart = 26214396; length = 6553600
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4982 ] - [ INFO ]  Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4982 ] - [ INFO ]  
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4982 ] - [ INFO ]  Starting flush of map output
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4982 ] - [ INFO ]  Spilling map output
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4982 ] - [ INFO ]  bufstart = 0; bufend = 86; bufvoid = 104857600
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4982 ] - [ INFO ]  kvstart = 26214396(104857584); kvend = 26214396(104857584); length = 1/6553600
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4982 ] - [ INFO ]  Finished spill 0
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4982 ] - [ INFO ]  Task:attempt_local950759712_0001_m_000002_0 is done. And is in the process of committing
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4982 ] - [ INFO ]  map
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4982 ] - [ INFO ]  Task 'attempt_local950759712_0001_m_000002_0' done.
+2018-06-22 20:56:48  [ LocalJobRunner Map Task Executor #0:4982 ] - [ INFO ]  Finishing task: attempt_local950759712_0001_m_000002_0
+2018-06-22 20:56:48  [ Thread-16:4982 ] - [ INFO ]  map task executor complete.
+2018-06-22 20:56:48  [ Thread-16:4997 ] - [ DEBUG ]  Starting reduce thread pool executor.
+2018-06-22 20:56:48  [ Thread-16:4997 ] - [ DEBUG ]  Max local threads: 1
+2018-06-22 20:56:48  [ Thread-16:4997 ] - [ DEBUG ]  Reduce tasks to process: 1
+2018-06-22 20:56:48  [ Thread-16:4997 ] - [ INFO ]  Waiting for reduce tasks
+2018-06-22 20:56:48  [ pool-3-thread-1:4997 ] - [ INFO ]  Starting task: attempt_local950759712_0001_r_000000_0
+2018-06-22 20:56:48  [ pool-3-thread-1:4997 ] - [ DEBUG ]  currentIndex 0   0:0
+2018-06-22 20:56:48  [ pool-3-thread-1:4997 ] - [ DEBUG ]  mapreduce.cluster.local.dir for child : /tmp/hadoop-Administrator/mapred/local/localRunner//Administrator/jobcache/job_local950759712_0001/attempt_local950759712_0001_r_000000_0
+2018-06-22 20:56:48  [ pool-3-thread-1:4997 ] - [ DEBUG ]  using new api for output committer
+2018-06-22 20:56:48  [ pool-3-thread-1:4997 ] - [ INFO ]  File Output Committer Algorithm version is 1
+2018-06-22 20:56:48  [ pool-3-thread-1:4997 ] - [ INFO ]  ProcfsBasedProcessTree currently is supported only on Linux.
+2018-06-22 20:56:48  [ pool-3-thread-1:5122 ] - [ INFO ]   Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@806210
+2018-06-22 20:56:48  [ pool-3-thread-1:5122 ] - [ INFO ]  Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@12bc760
+2018-06-22 20:56:48  [ pool-3-thread-1:5138 ] - [ INFO ]  MergerManager: memoryLimit=181665792, maxSingleShuffleLimit=45416448, mergeThreshold=119899424, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2018-06-22 20:56:48  [ EventFetcher for fetching Map Completion Events:5138 ] - [ INFO ]  attempt_local950759712_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2018-06-22 20:56:48  [ EventFetcher for fetching Map Completion Events:5138 ] - [ DEBUG ]  Got 0 map completion events from 0
+2018-06-22 20:56:48  [ EventFetcher for fetching Map Completion Events:5138 ] - [ DEBUG ]  GetMapEventsThread about to sleep for 1000
+2018-06-22 20:56:48  [ localfetcher#1:5138 ] - [ DEBUG ]  LocalFetcher 1 going to fetch: attempt_local950759712_0001_m_000002_0
+2018-06-22 20:56:48  [ localfetcher#1:5153 ] - [ DEBUG ]  attempt_local950759712_0001_m_000002_0: Proceeding with shuffle since usedMemory (0) is lesser than memoryLimit (181665792).CommitMemory is (0)
+2018-06-22 20:56:48  [ localfetcher#1:5169 ] - [ INFO ]  localfetcher#1 about to shuffle output of map attempt_local950759712_0001_m_000002_0 decomp: 90 len: 94 to MEMORY
+2018-06-22 20:56:48  [ localfetcher#1:5169 ] - [ INFO ]  Read 90 bytes from map-output for attempt_local950759712_0001_m_000002_0
+2018-06-22 20:56:48  [ localfetcher#1:5169 ] - [ INFO ]  closeInMemoryFile -> map-output of size: 90, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->90
+2018-06-22 20:56:48  [ localfetcher#1:5169 ] - [ DEBUG ]  map attempt_local950759712_0001_m_000002_0 done 1 / 3 copied.
+2018-06-22 20:56:48  [ localfetcher#1:5169 ] - [ DEBUG ]  LocalFetcher 1 going to fetch: attempt_local950759712_0001_m_000000_0
+2018-06-22 20:56:48  [ localfetcher#1:5169 ] - [ DEBUG ]  attempt_local950759712_0001_m_000000_0: Proceeding with shuffle since usedMemory (90) is lesser than memoryLimit (181665792).CommitMemory is (90)
+2018-06-22 20:56:48  [ localfetcher#1:5169 ] - [ INFO ]  localfetcher#1 about to shuffle output of map attempt_local950759712_0001_m_000000_0 decomp: 105 len: 109 to MEMORY
+2018-06-22 20:56:48  [ localfetcher#1:5169 ] - [ INFO ]  Read 105 bytes from map-output for attempt_local950759712_0001_m_000000_0
+2018-06-22 20:56:48  [ localfetcher#1:5169 ] - [ INFO ]  closeInMemoryFile -> map-output of size: 105, inMemoryMapOutputs.size() -> 2, commitMemory -> 90, usedMemory ->195
+2018-06-22 20:56:48  [ localfetcher#1:5169 ] - [ DEBUG ]  map attempt_local950759712_0001_m_000000_0 done 2 / 3 copied.
+2018-06-22 20:56:48  [ localfetcher#1:5169 ] - [ DEBUG ]  LocalFetcher 1 going to fetch: attempt_local950759712_0001_m_000001_0
+2018-06-22 20:56:48  [ localfetcher#1:5185 ] - [ DEBUG ]  attempt_local950759712_0001_m_000001_0: Proceeding with shuffle since usedMemory (195) is lesser than memoryLimit (181665792).CommitMemory is (195)
+2018-06-22 20:56:48  [ localfetcher#1:5185 ] - [ INFO ]  localfetcher#1 about to shuffle output of map attempt_local950759712_0001_m_000001_0 decomp: 88 len: 92 to MEMORY
+2018-06-22 20:56:48  [ localfetcher#1:5185 ] - [ INFO ]  Read 88 bytes from map-output for attempt_local950759712_0001_m_000001_0
+2018-06-22 20:56:48  [ localfetcher#1:5185 ] - [ INFO ]  closeInMemoryFile -> map-output of size: 88, inMemoryMapOutputs.size() -> 3, commitMemory -> 195, usedMemory ->283
+2018-06-22 20:56:48  [ localfetcher#1:5185 ] - [ DEBUG ]  map attempt_local950759712_0001_m_000001_0 done 3 / 3 copied.
+2018-06-22 20:56:48  [ EventFetcher for fetching Map Completion Events:5185 ] - [ INFO ]  EventFetcher is interrupted.. Returning
+2018-06-22 20:56:48  [ pool-3-thread-1:5185 ] - [ INFO ]  3 / 3 copied.
+2018-06-22 20:56:48  [ pool-3-thread-1:5185 ] - [ INFO ]  finalMerge called with 3 in-memory map-outputs and 0 on-disk map-outputs
+2018-06-22 20:56:48  [ pool-3-thread-1:5185 ] - [ INFO ]  Merging 3 sorted segments
+2018-06-22 20:56:48  [ pool-3-thread-1:5200 ] - [ INFO ]  Down to the last merge-pass, with 3 segments left of total size: 203 bytes
+2018-06-22 20:56:48  [ pool-3-thread-1:5200 ] - [ INFO ]  Merged 3 segments, 283 bytes to disk to satisfy reduce memory limit
+2018-06-22 20:56:48  [ pool-3-thread-1:5200 ] - [ DEBUG ]  Disk file: /tmp/hadoop-Administrator/mapred/local/localRunner/Administrator/jobcache/job_local950759712_0001/attempt_local950759712_0001_r_000000_0/output/map_1.out.merged Length is 283
+2018-06-22 20:56:48  [ pool-3-thread-1:5200 ] - [ INFO ]  Merging 1 files, 283 bytes from disk
+2018-06-22 20:56:48  [ pool-3-thread-1:5200 ] - [ INFO ]  Merging 0 segments, 0 bytes from memory into reduce
+2018-06-22 20:56:48  [ pool-3-thread-1:5200 ] - [ INFO ]  Merging 1 sorted segments
+2018-06-22 20:56:48  [ pool-3-thread-1:5200 ] - [ INFO ]  Down to the last merge-pass, with 1 segments left of total size: 253 bytes
+2018-06-22 20:56:48  [ pool-3-thread-1:5200 ] - [ INFO ]  3 / 3 copied.
+2018-06-22 20:56:48  [ main:5216 ] - [ DEBUG ]  PrivilegedAction as:Administrator (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+2018-06-22 20:56:48  [ main:5216 ] - [ INFO ]  Job job_local950759712_0001 running in uber mode : false
+2018-06-22 20:56:48  [ main:5216 ] - [ INFO ]   map 100% reduce 0%
+2018-06-22 20:56:48  [ main:5216 ] - [ DEBUG ]  PrivilegedAction as:Administrator (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.getTaskCompletionEvents(Job.java:670)
+2018-06-22 20:56:48  [ main:5216 ] - [ DEBUG ]  PrivilegedAction as:Administrator (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+2018-06-22 20:56:48  [ main:5216 ] - [ DEBUG ]  PrivilegedAction as:Administrator (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+2018-06-22 20:56:48  [ pool-3-thread-1:5497 ] - [ INFO ]  mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2018-06-22 20:56:48  [ pool-3-thread-1:5506 ] - [ INFO ]  Task:attempt_local950759712_0001_r_000000_0 is done. And is in the process of committing
+2018-06-22 20:56:48  [ pool-3-thread-1:5506 ] - [ INFO ]  3 / 3 copied.
+2018-06-22 20:56:48  [ pool-3-thread-1:5506 ] - [ INFO ]  Task attempt_local950759712_0001_r_000000_0 is allowed to commit now
+2018-06-22 20:56:48  [ pool-3-thread-1:5506 ] - [ INFO ]  Saved output of task 'attempt_local950759712_0001_r_000000_0' to file:/H:/output3/_temporary/0/task_local950759712_0001_r_000000
+2018-06-22 20:56:48  [ pool-3-thread-1:5506 ] - [ INFO ]  reduce > reduce
+2018-06-22 20:56:48  [ pool-3-thread-1:5506 ] - [ INFO ]  Task 'attempt_local950759712_0001_r_000000_0' done.
+2018-06-22 20:56:48  [ pool-3-thread-1:5506 ] - [ INFO ]  Finishing task: attempt_local950759712_0001_r_000000_0
+2018-06-22 20:56:48  [ Thread-16:5506 ] - [ INFO ]  reduce task executor complete.
+2018-06-22 20:56:48  [ Thread-16:5522 ] - [ DEBUG ]  Merging data from DeprecatedRawLocalFileStatus{path=file:/H:/output3/_temporary/0/task_local950759712_0001_r_000000; isDirectory=true; modification_time=1529672208757; access_time=0; owner=; group=; permission=rwxrwxrwx; isSymlink=false} to file:/H:/output3
+2018-06-22 20:56:48  [ Thread-16:5522 ] - [ DEBUG ]  Merging data from DeprecatedRawLocalFileStatus{path=file:/H:/output3/_temporary/0/task_local950759712_0001_r_000000/part-r-00000; isDirectory=false; length=382; replication=1; blocksize=33554432; modification_time=1529672208907; access_time=0; owner=; group=; permission=rw-rw-rw-; isSymlink=false} to file:/H:/output3/part-r-00000
+2018-06-22 20:56:49  [ Thread-16:5819 ] - [ DEBUG ]  PrivilegedAction as:Administrator (auth:SIMPLE) from:org.apache.hadoop.fs.FileContext.getAbstractFileSystem(FileContext.java:331)
+2018-06-22 20:56:49  [ main:6225 ] - [ INFO ]   map 100% reduce 100%
+2018-06-22 20:56:49  [ main:6225 ] - [ DEBUG ]  PrivilegedAction as:Administrator (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.getTaskCompletionEvents(Job.java:670)
+2018-06-22 20:56:49  [ main:6225 ] - [ DEBUG ]  PrivilegedAction as:Administrator (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+2018-06-22 20:56:49  [ main:6225 ] - [ DEBUG ]  PrivilegedAction as:Administrator (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+2018-06-22 20:56:49  [ main:6225 ] - [ DEBUG ]  PrivilegedAction as:Administrator (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.getTaskCompletionEvents(Job.java:670)
+2018-06-22 20:56:49  [ main:6225 ] - [ DEBUG ]  PrivilegedAction as:Administrator (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+2018-06-22 20:56:49  [ main:6225 ] - [ DEBUG ]  PrivilegedAction as:Administrator (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+2018-06-22 20:56:49  [ main:6225 ] - [ INFO ]  Job job_local950759712_0001 completed successfully
+2018-06-22 20:56:49  [ main:6225 ] - [ DEBUG ]  PrivilegedAction as:Administrator (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.getCounters(Job.java:758)
+2018-06-22 20:56:49  [ main:6225 ] - [ INFO ]  Counters: 30
+	File System Counters
+		FILE: Number of bytes read=4059
+		FILE: Number of bytes written=1170157
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=3
+		Map output records=3
+		Map output bytes=271
+		Map output materialized bytes=295
+		Input split bytes=266
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=3
+		Reduce shuffle bytes=295
+		Reduce input records=3
+		Reduce output records=3
+		Spilled Records=6
+		Shuffled Maps =3
+		Failed Shuffles=0
+		Merged Map outputs=3
+		GC time elapsed (ms)=42
+		Total committed heap usage (bytes)=747593728
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=185
+	File Output Format Counters 
+		Bytes Written=394
+2018-06-22 20:56:49  [ main:6225 ] - [ DEBUG ]  PrivilegedAction as:Administrator (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
